@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gestión de Registros</title>
+</head>
+<body>
+<h1>Gestión de Registros</h1>
+
+<!-- Sección para agregar un nuevo registro -->
+<h2>Agregar Nuevo Registro</h2>
+<form action="guardar" method="post">
+    Tribunal: <input type="text" name="strTribunal" required><br>
+    Antecedente: <input type="number" name="antecedente" required><br>
+    Número de Expediente: <input type="number" name="numExpediente" required><br>
+    Año: <input type="number" name="year" required><br>
+    Nombre de la Usuaria: <input type="text" name="nombreUsuaria" required><br>
+    Estatus: <input type="checkbox" name="estatusM"><br>
+    Fecha de Préstamo: <input type="date" name="fechaPrestamo" required><br>
+    Fecha de Devolución: <input type="date" name="fechaDevolucion" required><br>
+    Hora: <input type="time" name="hora" required><br>
+    <input type="submit" value="Guardar">
+</form>
+
+<!-- Sección para listar todos los registros -->
+<h2>Lista de Registros</h2>
+<table border="1">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Tribunal</th>
+        <th>Antecedente</th>
+        <th>Número de Expediente</th>
+        <th>Año</th>
+        <th>Nombre de la Usuaria</th>
+        <th>Estatus</th>
+        <th>Fecha de Préstamo</th>
+        <th>Fecha de Devolución</th>
+        <th>Hora</th>
+        <th>Acciones</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!-- Aquí se insertarán dinámicamente los registros -->
+    </tbody>
+</table>
+
+<!-- Enlace para generar la portada -->
+<h2>Generar Portada</h2>
+<form action="portada" method="get">
+    ID del Registro: <input type="number" name="id" required><br>
+    <input type="submit" value="Generar Portada">
+</form>
+</body>
+</html>
